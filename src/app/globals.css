@@ -2,26 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+body{
+    color: #FF8282;
+    font-family: 'Manrope', sans-serif !important;
+    background: black;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+video{
+    z-index: -1;
+}
+
+span{
+    color: #808080;
+}
+h1{
+    font-family: 'VT323', monospace;
+}
+
+.line::after{
+    position: absolute;
+    content: '';
+    top: 35px;
+    right: 0px;
+    width: 90px;
+    height: 7px;
+    background-color: #FF8282;
+}
+
+.css-current-storage {
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in ease-out;
+}
+
+
+@keyframes color {
+from {
+   background-color: black;
+  
+  }
+to {
+  background-color: rgb(37, 9, 63);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.avatar{
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    max-width: 200px;
+    max-height: 200px;
 }
