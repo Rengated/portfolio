@@ -21,14 +21,9 @@ h1{
     font-family: 'VT323', monospace;
 }
 
-.line::after{
-    position: absolute;
-    content: '';
-    top: 35px;
-    right: 0px;
-    width: 90px;
-    height: 7px;
-    background-color: #FF8282;
+.line{
+    padding-bottom: 3px;
+    border-bottom: 3px solid #FF8282;
 }
 
 .css-current-storage {
