@@ -1,5 +1,4 @@
 import { FC } from "react";
-import bg from "../../assets/video/bg.mp4";
 
 export const Header: FC = () => {
   return (
