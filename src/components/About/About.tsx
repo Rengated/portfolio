@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
-import me from "../../assets/img/real-me.jpg";
+import me from "../../../public/static/img/real-me.jpg";
 
 export const About: FC = () => {
   return (

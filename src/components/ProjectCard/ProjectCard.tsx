@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
-import project from "../../assets/img/project.png";
+import project from "../../../public/static/img/project.png";
 
 export const ProjectCard: FC = () => {
   return (

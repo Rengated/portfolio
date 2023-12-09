@@ -1,5 +1,5 @@
 import Image from "next/image";
-import git from "../../assets/img/git.svg";
+import git from "../../../public/static/img/git.svg";
 import { FC } from "react";
 
 export const Contact: FC = () => {
