@@ -21,7 +21,7 @@ export const Projects: FC = () => {
     },
   ];
   return (
-    <section className="w-full flex py-20 justify-center align-center  border-b-2 border-zinc-600">
+    <section className="w-full flex py-20 px-10 justify-center align-center  border-b-2 border-zinc-600">
       <div className="container flex flex-col  items-center  self-center">
         <h2 className=" top-16 line mb-20 text-center flex self-center line text-3xl ">
           intresting cases

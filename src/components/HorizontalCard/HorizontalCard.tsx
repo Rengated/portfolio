@@ -15,16 +15,17 @@ export const HorizontalCard: FC<HorizontalCardProps> = ({
   link,
 }) => {
   return (
-    <div className="p-8  bg-violet-950 basis-9/12 max-w-screen-xl w-full rounded-md mt-10 hover:scale-105 flex ">
+    <div className="p-8  bg-violet-950 basis-9/12 max-w-screen-xl w-full rounded-md mt-10 hover:scale-105 flex max-md:flex-col max-sm:p-4 ">
       <Image
         objectFit=""
         height={300}
         src={img}
+        className="max-md:mb-7"
         alt=""
       />
-      <div className="flex flex-col pl-10 items-start w-full">
+      <div className="flex flex-col pl-10 items-start w-full max-md:pl-0">
         <p className="text-4xl text-white font-extrabold mb-3">{title}</p>
-        <p className="">{description}</p>
+        <p className="mb-7">{description}</p>
         <a
           href={link}
           target="_tab"

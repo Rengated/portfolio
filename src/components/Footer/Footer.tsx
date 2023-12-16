@@ -10,10 +10,11 @@ export const Footer = () => {
         <p className="font-extrabold text-md ">RENGATED</p>
         <span className="text-white font-extrabold ">@2023</span>
       </div>
-      <div className="self-start flex justify-start  items-center  w-full px-10 py-5 ">
+      <div className="self-start flex justify-start  items-center  w-full px-10 py-5 max-sm:flex-col max-sm:items-start ">
         <a
           href="https://github.com/rengated"
-          target="_tab">
+          target="_tab"
+          className="max-sm:mb-5">
           <Image
             src={git}
             width={30}
@@ -24,7 +25,7 @@ export const Footer = () => {
         </a>
         <a
           href="https://telegram.me/rengated"
-          className="ml-10"
+          className="ml-10  max-sm:ml-0 max-sm:mb-5"
           target="_tab">
           <Image
             src={tg}
@@ -38,7 +39,7 @@ export const Footer = () => {
         <a
           href="mailto:kazievserg@yandex.ru"
           target="_tab"
-          className="ml-10">
+          className="ml-10   max-sm:ml-0 max-sm:mb-5">
           <Image
             src={mail}
             width={30}
@@ -50,7 +51,7 @@ export const Footer = () => {
         <a
           href="mailto:kazievserg@yandex.ru"
           target="_tab"
-          className="ml-10 text-white font-extrabold ml-auto">
+          className=" text-white font-extrabold ml-auto   max-sm:ml-0   max-sm:mb-5">
           +7(962)-746-04-08
         </a>
       </div>
