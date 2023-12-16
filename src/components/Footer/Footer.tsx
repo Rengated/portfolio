@@ -11,7 +11,7 @@ export const Footer = () => {
     <footer className="flex justify-center flex-col ">
       <div className="flex justify-between  items-center px-10 py-10 w-full   ">
         <p className="font-extrabold text-md ">RENGATED</p>
-        <span className="text-white font-extrabold ">@2023</span>
+        <span className=" font-extrabold ">@2023</span>
       </div>
       <div className="self-start flex justify-start  items-center  w-full px-10 py-5 max-sm:flex-col max-sm:items-start ">
         <a
@@ -54,7 +54,7 @@ export const Footer = () => {
         <a
           href="mailto:kazievserg@yandex.ru"
           target="_tab"
-          className=" text-white font-extrabold ml-auto   max-sm:ml-0   max-sm:mb-5">
+          className="  font-extrabold ml-auto   max-sm:ml-0   max-sm:mb-5">
           +7(962)-746-04-08
         </a>
       </div>
