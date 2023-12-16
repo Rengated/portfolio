@@ -3,8 +3,9 @@ import Image from "next/image";
 import me from "../../../public/static/img/real-me.jpg";
 
 export const About: FC = () => {
+  // border-b-2 border-zinc-600
   return (
-    <section className="flex justify-center align-center  border-b-2 border-zinc-600 css-current-storage ">
+    <section className="flex justify-center align-center  css-current-storage ">
       <div className="container flex flex-col pt-20 pb-20 justify-center items-center px-4">
         <h2 className="mb-20 text-2xl font-extrabold mr-auto line">about me</h2>
         <div className="flex mb-20 flex-col items-center font-extrabold  lg:flex-row">

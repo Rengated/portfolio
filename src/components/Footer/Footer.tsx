@@ -2,8 +2,11 @@ import Image from "next/image";
 import git from "../../../public/static/img/git.svg";
 import mail from "../../../public/static/img/email.png";
 import tg from "../../../public/static/img/telegram.png";
+import { useContext } from "react";
+import { Theme } from "@/store/theme";
 
 export const Footer = () => {
+  const { currentTheme } = useContext(Theme);
   return (
     <footer className="flex justify-center flex-col ">
       <div className="flex justify-between  items-center px-10 py-10 w-full   ">
@@ -19,7 +22,7 @@ export const Footer = () => {
             src={git}
             width={30}
             height={30}
-            className="invert hover:bg-white border hover:filter-none rounded-full cursor-pointer"
+            className={`${currentTheme == "black" ? "invert" : ""}`}
             alt="icon"
           />
         </a>
@@ -31,7 +34,7 @@ export const Footer = () => {
             src={tg}
             width={30}
             height={30}
-            className="invert hover:bg-white border hover:filter-none rounded-full cursor-pointer"
+            className={`${currentTheme == "black" ? "invert" : ""}`}
             alt="
             icon"
           />
@@ -44,7 +47,7 @@ export const Footer = () => {
             src={mail}
             width={30}
             height={30}
-            className="invert cursor-pointer"
+            className={`${currentTheme == "black" ? "invert" : ""}`}
             alt="icon"
           />
         </a>

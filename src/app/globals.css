@@ -4,50 +4,31 @@
 
 
 body{
-    color: #FF8282;
+
     font-family: 'Manrope', sans-serif !important;
-    background: black;
-
 }
 
-video{
-    z-index: -1;
-}
-
-span{
-    color: #808080;
-}
+ 
 h1{
     font-family: 'VT323', monospace;
 }
 
 .line{
     padding-bottom: 3px;
-    border-bottom: 3px solid #FF8282;
+    border-bottom: 3px solid white;
 }
-
-.css-current-storage {
-    animation-name: color;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: ease-in ease-out;
-}
-
-
-@keyframes color {
-from {
-   background-color: black;
-  
-  }
-to {
-  background-color: rgb(37, 9, 63);
-  }
-}
-
+ 
 .avatar{
     object-fit: cover;
     aspect-ratio: 1/1;
     max-width: 200px;
     max-height: 200px;
+}
+
+.vertical-timeline-element-content{
+    box-shadow: none !important;
+}
+
+.vertical-timeline::before{
+    top: unset !important;
 }
