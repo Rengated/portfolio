@@ -3,7 +3,6 @@ import Image from "next/image";
 import me from "../../../public/static/img/real-me.jpg";
 
 export const About: FC = () => {
-  // border-b-2 border-zinc-600
   return (
     <section className="flex justify-center align-center  css-current-storage ">
       <div className="container flex flex-col pt-20 pb-20 justify-center items-center px-4">

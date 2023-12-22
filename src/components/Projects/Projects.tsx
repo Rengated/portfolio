@@ -2,6 +2,7 @@ import { FC } from "react";
 import { HorizontalCard } from "../HorizontalCard/HorizontalCard";
 import statoola from "../../../public/static/img/statoola.png";
 import movies from "../../../public/static/img/movies.png";
+import years from "../../../public/static/img/90-years.png";
 
 export const Projects: FC = () => {
   const projects = [
@@ -18,6 +19,13 @@ export const Projects: FC = () => {
       title: "Movies",
       description: "Test task for the company deneb",
       link: "https://rengated.github.io/movies/",
+    },
+    {
+      img: years,
+      title: "90-years calendar",
+      description:
+        "Each line in this calendar represents one year of life. each cell is a week. That's how many weeks it takes to go from a newborn to a 90-year-old. This is what the time allotted to us looks like.",
+      link: "http://rengated-dev.ru/90years",
     },
   ];
   return (
