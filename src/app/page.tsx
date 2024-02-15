@@ -16,7 +16,7 @@ export default function Home() {
         currentTheme == "black" ? "bg-black text-white" : "bg-white text-black"
       } relative`}>
       <Header />
-      <Projects />
+      {/* <Projects /> */}
       <About />
       <TimeLine />
       <Footer />
